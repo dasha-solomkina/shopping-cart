@@ -12,12 +12,14 @@ export default function Card({ id, title, image, price }: CardProps) {
     <div className="card" key={id}>
       <img src={image} alt={title} />
       <div className="card-checkout">
-        <div className="input-group">
-          <button className="decrement-btn">-</button>
-          <input type="number" placeholder="1" />
-          <button className="increment-btn">+</button>
-        </div>
-        <button>Add to bag</button>
+        <input
+          className="quantity-input"
+          type="number"
+          min="1"
+          max="15"
+          placeholder="1"
+        />
+        <button className="card-addToBag-btn">Add to bag</button>
       </div>
       <p className="title">{title}</p>
       <p className="price">${price}</p>
