@@ -11,3 +11,14 @@ header {
   align-items: center;
   border: 1px solid grey;
 }
+
+.grid-cards {
+  display: grid;
+  padding: 2% 5%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+img {
+  max-width: 90%;
+}

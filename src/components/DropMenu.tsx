@@ -8,6 +8,7 @@ export default function BasicMenu() {
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
+    console.log(event.currentTarget);
   };
   const handleClose = () => {
     setAnchorEl(null);
@@ -22,7 +23,7 @@ export default function BasicMenu() {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
       >
-        Dashboard
+        Categories
       </Button>
       <Menu
         id="basic-menu"
@@ -33,9 +34,9 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <MenuItem onClick={handleClose}>Women</MenuItem>
+        <MenuItem onClick={handleClose}>Men</MenuItem>
+        <MenuItem onClick={handleClose}>Jewelry</MenuItem>
       </Menu>
     </div>
   );
