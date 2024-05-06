@@ -23,8 +23,8 @@ export default function Shop() {
 
   return (
     <Layout>
-      <div>
-        <h2>SHOP PAGE!</h2>
+      <div className="container">
+        <h2>All products</h2>
         {fetchedProducts && fetchedProducts.length > 0 && (
           <CardsGrid arr={fetchedProducts} />
         )}

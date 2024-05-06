@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 export default function BasicMenu() {
   return (
     <>
+      <Link to="../" className="linkWithoutStyles">
+        <p>Home</p>
+      </Link>
       <Link to="../shop" className="linkWithoutStyles">
         <p>Shop</p>
       </Link>

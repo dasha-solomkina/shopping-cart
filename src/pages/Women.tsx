@@ -28,8 +28,8 @@ export default function Women() {
 
   return (
     <Layout>
-      <div>
-        <h2>WOMEN PAGE!</h2>
+      <div className="container">
+        <h2>Women</h2>
         {fetchedProducts && fetchedProducts.length > 0 && (
           <CardsGrid arr={filteredProducts} />
         )}

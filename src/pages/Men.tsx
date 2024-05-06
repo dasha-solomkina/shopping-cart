@@ -28,8 +28,8 @@ export default function Men() {
 
   return (
     <Layout>
-      <div>
-        <h2>MEN PAGE! here</h2>
+      <div className="container">
+        <h2>Men</h2>
         {fetchedProducts && fetchedProducts.length > 0 && (
           <CardsGrid arr={filteredProducts} />
         )}

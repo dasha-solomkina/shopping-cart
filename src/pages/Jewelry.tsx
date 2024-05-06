@@ -28,8 +28,8 @@ export default function Jewelry() {
 
   return (
     <Layout>
-      <div>
-        <h2>JEWELRY PAGE!</h2>
+      <div className="container">
+        <h2>Jewelry</h2>
         {fetchedProducts && fetchedProducts.length > 0 && (
           <CardsGrid arr={filteredProducts} />
         )}
