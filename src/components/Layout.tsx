@@ -10,7 +10,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="layout">
       <Header />
-      <div className="container">{children}</div>
+      <div className="container-global">{children}</div>
       <Footer />
     </div>
   );

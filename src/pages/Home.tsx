@@ -1,9 +1,14 @@
 import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
     <Layout>
-      <h2>Some welcome message here</h2>
+      <div className="container">
+        <Link to="shop">
+          <button id="btn-shop-now">Shop now</button>
+        </Link>
+      </div>
     </Layout>
   );
 }

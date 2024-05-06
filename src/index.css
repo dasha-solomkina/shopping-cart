@@ -3,6 +3,7 @@
   margin: 0;
 }
 
+/* Header */
 header {
   display: flex;
   min-height: 80px;
@@ -12,6 +13,7 @@ header {
   padding: 0 250px;
 }
 
+/* Cards */
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -35,8 +37,42 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: start;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
+.cta {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 200px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  gap: 20px;
+  transform: translate(100%, 400%);
+}
+
+#btn-shop-now {
+  background-color: white;
+  padding: 6px 10px;
+  font-size: 3rem;
+  border: 1px solid black;
+  border-radius: 22px;
+  font-weight: 700;
+}
+
+#btn-shop-now:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.container-global {
+  height: 100%;
+}
+
+/* Footer */
 footer {
   margin-top: auto;
   min-height: 50px;
@@ -51,4 +87,15 @@ footer {
   margin-left: 8px;
   color: white;
   text-decoration: none;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-right: 300px;
+}
+
+.linkWithoutStyles {
+  text-decoration: none;
+  color: inherit;
 }
