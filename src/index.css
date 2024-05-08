@@ -197,12 +197,15 @@ button:hover {
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
-  align-items: center;
+  /* position: relative; */
 }
 
 .cart-summary {
-  /* width: 400px; */
-  /* height: 350px; */
+  width: 400px;
+  height: 350px;
+  position: fixed;
+  top: 26%;
+  right: 10%;
   padding: 20px 30px;
   border: none;
   border-radius: 8px;
@@ -210,6 +213,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: start;
+  /* align-self: center; */
 }
 
 h3 {
@@ -262,4 +266,44 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.cart-table {
+  margin-bottom: 50px;
+}
+
+.cart-table-header,
+.item {
+  display: grid;
+  grid-template-columns: 3fr repeat(4, 2fr) 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+.cart-table-header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: rgb(73, 73, 73);
+  font-weight: 500;
+}
+
+.bin {
+  width: 20px;
+}
+
+.bin:hover {
+  cursor: pointer;
+}
+
+.cart-product {
+  width: 65px;
+  padding: 10px 0;
 }

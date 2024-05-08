@@ -1,3 +1,5 @@
+import NewCartItem from './NewCartItem';
+
 export default function CartTable() {
   const testProduct = [
     {
@@ -19,6 +21,20 @@ export default function CartTable() {
         <h4>Quantity</h4>
         <h4>Total</h4>
       </div>
+      <NewCartItem />
+      <NewCartItem />
+      {/* <NewCartItem />
+      <NewCartItem />
+      <NewCartItem />
+      <NewCartItem />
+      <NewCartItem />
+      <NewCartItem />
+      <NewCartItem />
+      <NewCartItem />
+      <NewCartItem />
+      <NewCartItem />
+      <NewCartItem />
+      <NewCartItem /> */}
       {/* add: there are no products in the cart, mb button? */}
     </div>
   );
