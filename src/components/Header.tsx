@@ -1,4 +1,4 @@
-import BasicMenu from './DropMenu';
+import BasicMenu from './Menu';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
@@ -8,7 +8,6 @@ export default function Header() {
         <h1>Trendzz</h1>
       </Link>
       <BasicMenu />
-      <p>Cart</p>
     </header>
   );
 }

@@ -189,3 +189,11 @@ button:hover {
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Cart */
+.container-cart {
+  padding: 20px 250px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}

@@ -18,6 +18,9 @@ export default function BasicMenu() {
       <Link to="../shop/jewelry" className="linkWithoutStyles">
         <p>Jewerly</p>
       </Link>
+      <Link to="../cart" className="linkWithoutStyles">
+        <p>Cart</p>
+      </Link>
     </>
   );
 }
