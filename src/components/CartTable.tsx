@@ -11,37 +11,15 @@ export default function CartTable() {
   ];
 
   return (
-    <table>
-      <tr>
-        <th>Product</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Total</th>
-      </tr>
-      {testProduct.map((product) => {
-        return (
-          <tr>
-            <td>{product.title}</td>
-            <td>{product.title}</td>
-            <td>{product.price}</td>
-            <td>4</td>
-            <td>{product.price}</td>
-          </tr>
-        );
-      })}
-    </table>
+    <div className="cart-table">
+      <div className="cart-table-header">
+        <h4>Item</h4>
+        <h4>&nbsp;</h4>
+        <h4>Price</h4>
+        <h4>Quantity</h4>
+        <h4>Total</h4>
+      </div>
+      {/* add: there are no products in the cart, mb button? */}
+    </div>
   );
 }
-
-// {arr.map((card: CardProps) => {
-//     return (
-//       <Card
-//         id={card.id}
-//         key={card.id}
-//         title={card.title}
-//         image={card.image}
-//         price={card.price}
-//       />
-//     );
-//   })}
