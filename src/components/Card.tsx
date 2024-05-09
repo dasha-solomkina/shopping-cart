@@ -20,22 +20,19 @@ export default function Card({ id, title, image, price }: CardProps) {
   return (
     <div className="card" key={id}>
       <img src={image} alt={title} />
-      <div className="card-checkout">
-        <form onSubmit={handleAddToBag}>
-          <input
-            className="quantity-input"
-            type="number"
-            min="1"
-            max="15"
-            placeholder="1"
-            value={quantity}
-            onChange={(e) => setQuantity(Number(e.target.value))}
-          />
-          <button type="submit" className="card-addToBag-btn">
-            Add to bag
-          </button>
-        </form>
-      </div>
+      <form className="card-checkout" onSubmit={handleAddToBag}>
+        <input
+          type="number"
+          min="1"
+          max="15"
+          placeholder="1"
+          value={quantity}
+          onChange={(e) => setQuantity(Number(e.target.value))}
+        />
+        <button type="submit" className="card-addToBag-btn">
+          Add to bag
+        </button>
+      </form>
       <p className="title">{title}</p>
       <p className="price">${price}</p>
     </div>

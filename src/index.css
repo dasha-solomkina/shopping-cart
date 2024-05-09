@@ -312,6 +312,7 @@ h4 {
 #menu-count {
   display: flex;
   align-items: center;
+  min-width: 50px;
 }
 
 #menu-count img {
