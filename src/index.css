@@ -87,7 +87,7 @@ img {
 #btn-shop-now {
   background-color: white;
   padding: 6px 10px;
-  font-size: 3rem;
+  font-size: 2.8rem;
   border: 1px solid black;
   border-radius: 20px;
   font-weight: 600;
@@ -116,7 +116,7 @@ footer {
 
 h1 {
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-right: 400px;
 }
 
@@ -206,7 +206,7 @@ button:hover {
   padding: 20px 30px;
   border: none;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -358,4 +358,13 @@ h4 {
 .empty {
   margin: 30px 80px;
   color: red;
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+    transform: scale(
+      0.8
+    ); /* Adjust the scale value as needed /
+  transform-origin: top left; / Ensures the content scales from the top-left corner */
+  }
 }
