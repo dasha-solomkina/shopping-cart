@@ -69,7 +69,7 @@ img {
 }
 
 .container {
-  padding: 20px 250px;
+  padding: 10px 150px;
   height: 100%;
 }
 
@@ -190,7 +190,7 @@ button:hover {
 
 /* Cart */
 .container-cart {
-  padding: 20px 250px;
+  padding: 10px 150px;
   height: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
