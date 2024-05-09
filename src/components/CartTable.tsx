@@ -17,7 +17,7 @@ export default function CartTable() {
 
       {cartItems.length === 0 ? (
         <p className="empty">
-          The cart is empty, please product you would like to buy.
+          The cart is empty, please add a product you would like to buy.
         </p>
       ) : (
         cartItems.map((card: CardQuantityProps) => {
