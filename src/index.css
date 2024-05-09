@@ -342,3 +342,19 @@ h4 {
   margin-top: 250px;
   width: 100px;
 }
+
+.changeOne {
+  font-weight: 700;
+  padding: 6px 6px;
+}
+
+.changeOne:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.103);
+  border-radius: 4px;
+}
+
+.empty {
+  margin: 30px 80px;
+  color: red;
+}

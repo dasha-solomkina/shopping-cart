@@ -1,16 +1,9 @@
 import NewCartItem from './NewCartItem';
+import { useMenuCartContext } from '../store/cartContext';
+import { CardQuantityProps } from '../store/cartContext';
 
 export default function CartTable() {
-  const testProduct = [
-    {
-      id: 1,
-      title: 'Opna Womens Short Sleeve Moisture',
-      price: '7.95',
-      // category: 'women',
-      // description: '...',
-      image: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg',
-    },
-  ];
+  const { cartItems } = useMenuCartContext();
 
   return (
     <div className="cart-table">
@@ -21,21 +14,25 @@ export default function CartTable() {
         <h4>Quantity</h4>
         <h4>Total</h4>
       </div>
-      <NewCartItem />
-      <NewCartItem />
-      {/* <NewCartItem />
-      <NewCartItem />
-      <NewCartItem />
-      <NewCartItem />
-      <NewCartItem />
-      <NewCartItem />
-      <NewCartItem />
-      <NewCartItem />
-      <NewCartItem />
-      <NewCartItem />
-      <NewCartItem />
-      <NewCartItem /> */}
-      {/* add: there are no products in the cart, mb button? */}
+
+      {cartItems.length === 0 ? (
+        <p className="empty">
+          The cart is empty, please product you would like to buy.
+        </p>
+      ) : (
+        cartItems.map((card: CardQuantityProps) => {
+          return (
+            <NewCartItem
+              id={card.id}
+              key={card.id}
+              title={card.title}
+              image={card.image}
+              price={card.price}
+              quantity={card.quantity}
+            />
+          );
+        })
+      )}
     </div>
   );
 }

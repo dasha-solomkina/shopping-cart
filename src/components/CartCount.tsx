@@ -7,7 +7,6 @@ export default function CartCount() {
     <div id="menu-count">
       <img src="../src/assets/cart.png" alt="cart" />
       {totalQuantity === 0 ? '' : <div id="counter">{totalQuantity}</div>}
-      {/* <div id="counter">{totalQuantity}</div> */}
     </div>
   );
 }

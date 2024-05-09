@@ -1,19 +1,49 @@
-export default function NewCartItem() {
+import { CardQuantityProps } from '../store/cartContext';
+import { useMenuCartContext } from '../store/cartContext';
+
+export default function NewCartItem({
+  id,
+  title,
+  image,
+  price,
+  quantity,
+}: CardQuantityProps) {
+  const { deleteItem, increaseOne, decreaseOne } = useMenuCartContext();
+
+  const total = price * quantity;
+
+  const handleDelete = () => {
+    deleteItem({ id, title, image, price, quantity });
+  };
+
+  const handleIncrease = () => {
+    increaseOne({ id, title, image, price, quantity });
+  };
+
+  const handleDecrease = () => {
+    decreaseOne({ id, title, image, price, quantity });
+  };
+
   return (
-    <div className="item">
+    <div className="item" key={id}>
       <div>
-        <img
-          className="cart-product"
-          src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-          alt=""
-        />
+        <img className="cart-product" src={image} alt="" />
       </div>
-      <p>name</p>
-      <p>number</p>
-      <p>quantity</p>
-      <p>total</p>
-      <div>
-        <img className="bin" src="src/assets/bin.png" alt="" />
+      <p>{title}</p>
+      <p>{price}</p>
+      <p>
+        {' '}
+        <span onClick={handleDecrease} className="changeOne">
+          -
+        </span>{' '}
+        {quantity}{' '}
+        <span onClick={handleIncrease} className="changeOne">
+          +
+        </span>{' '}
+      </p>
+      <p>{total.toFixed(2)}</p>
+      <div onClick={handleDelete}>
+        <img className="bin" src="src/assets/bin.png" alt="delete item" />
       </div>
     </div>
   );

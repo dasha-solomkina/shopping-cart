@@ -9,12 +9,13 @@ export type CardProps = {
 };
 
 export default function Card({ id, title, image, price }: CardProps) {
-  const { addToCart } = useMenuCartContext();
+  const { addToCart, addToMenuCount } = useMenuCartContext();
   const [quantity, setQuantity] = useState(1);
 
   const handleAddToBag = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    addToCart(quantity);
+    addToMenuCount(quantity);
+    addToCart({ id, title, price, image, quantity });
   };
 
   return (
