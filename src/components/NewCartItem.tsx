@@ -1,5 +1,6 @@
 import { CardQuantityProps } from '../store/cartContext';
 import { useMenuCartContext } from '../store/cartContext';
+import binImg from '../assets/bin.png';
 
 export default function NewCartItem({
   id,
@@ -43,7 +44,7 @@ export default function NewCartItem({
       </p>
       <p>{total.toFixed(2)}</p>
       <div onClick={handleDelete}>
-        <img className="bin" src="src/assets/bin.png" alt="delete item" />
+        <img className="bin" src={binImg} alt="delete item" />
       </div>
     </div>
   );

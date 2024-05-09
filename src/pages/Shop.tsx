@@ -3,6 +3,8 @@ import Layout from '../components/Layout';
 import fetchProducts, { FetchedDataProps } from '../store/data.ts';
 import CardsGrid from '../components/CardsGrid.tsx';
 
+import loadingImg from '../assets/loading.png';
+
 export default function Shop() {
   const [fetchedProducts, setFetchedProducts] = useState<
     FetchedDataProps[] | null
@@ -28,7 +30,7 @@ export default function Shop() {
     return (
       <Layout>
         <div className="loading-container">
-          <img src="../src/assets/loading.png" alt="loading" />
+          <img src={loadingImg} alt="loading" />
         </div>
       </Layout>
     );

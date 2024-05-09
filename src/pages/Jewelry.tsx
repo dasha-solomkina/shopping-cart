@@ -4,6 +4,8 @@ import CardsGrid from '../components/CardsGrid.tsx';
 import { useEffect, useState } from 'react';
 import { CardProps } from '../components/Card.tsx';
 
+import loadingImg from '../assets/loading.png';
+
 export default function Jewelry() {
   const [fetchedProducts, setFetchedProducts] = useState<
     FetchedDataProps[] | null
@@ -29,7 +31,7 @@ export default function Jewelry() {
     return (
       <Layout>
         <div className="loading-container">
-          <img src="../src/assets/loading.png" alt="loading" />
+          <img src={loadingImg} alt="loading" />
         </div>
       </Layout>
     );

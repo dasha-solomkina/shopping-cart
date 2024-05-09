@@ -1,4 +1,5 @@
 import { useMenuCartContext } from '../store/cartContext';
+import paymentOptions from '../assets/payment.webp';
 
 export default function CartSummary() {
   const { cartItems } = useMenuCartContext();
@@ -30,7 +31,7 @@ export default function CartSummary() {
       <button id="checkout-btn-cart">Checkout</button>
       <div id="payment-options">
         <p>Secure ways to pay</p>
-        <img src="src/assets/payment.webp" alt="payment options" />
+        <img src={paymentOptions} alt="payment options" />
       </div>
     </div>
   );
