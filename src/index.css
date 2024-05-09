@@ -200,8 +200,8 @@ button:hover {
 }
 
 .cart-summary {
-  max-width: 400px;
-  /* height: 350px; */
+  max-width: 320px;
+  height: 280px;
   position: fixed;
   top: 26%;
   right: 10%;
