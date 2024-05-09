@@ -69,7 +69,7 @@ img {
 }
 
 .container {
-  padding: 10px 150px;
+  padding: 20px 150px;
   height: 100%;
 }
 
@@ -106,12 +106,14 @@ footer {
   align-items: center;
   background-color: #111111;
   color: white;
+  font-size: 0.9rem;
 }
 
 #github {
   margin-left: 6px;
   color: white;
   text-decoration: none;
+  font-size: 0.9rem;
 }
 
 h1 {
@@ -198,8 +200,8 @@ button:hover {
 }
 
 .cart-summary {
-  width: 400px;
-  height: 350px;
+  max-width: 400px;
+  /* height: 350px; */
   position: fixed;
   top: 26%;
   right: 10%;
