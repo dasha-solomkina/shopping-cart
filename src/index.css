@@ -15,10 +15,10 @@ header {
 /* Cards */
 .grid-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 60px;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
 
 .price {
@@ -27,8 +27,8 @@ header {
 }
 
 .card {
-  width: 320px;
-  height: 416px;
+  width: 400px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -39,8 +39,8 @@ header {
 
 img {
   align-self: center;
-  max-width: 60%;
-  max-height: 55%;
+  max-width: 80%;
+  max-height: 75%;
   margin-bottom: auto;
 }
 
@@ -69,7 +69,7 @@ img {
 }
 
 .container {
-  padding: 20px 150px;
+  padding: 20px 250px;
   height: 100%;
 }
 
@@ -87,7 +87,7 @@ img {
 #btn-shop-now {
   background-color: white;
   padding: 6px 10px;
-  font-size: 2.8rem;
+  font-size: 3rem;
   border: 1px solid black;
   border-radius: 20px;
   font-weight: 600;
@@ -106,19 +106,17 @@ footer {
   align-items: center;
   background-color: #111111;
   color: white;
-  font-size: 0.9rem;
 }
 
 #github {
   margin-left: 6px;
   color: white;
   text-decoration: none;
-  font-size: 0.9rem;
 }
 
 h1 {
   font-weight: 900;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   margin-right: 400px;
 }
 
@@ -149,24 +147,23 @@ h2 {
 
 .card-addToBag-btn {
   font-family: 'Lato', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   background-color: black;
   color: white;
-  padding: 6px 8px;
+  padding: 6px 10px;
   border: none;
   border-radius: 8px;
   font-weight: 700;
 }
 
 input[type='number'] {
-  /* border: 1px solid gray; */
   border: none;
-  padding: 6px 8px;
+  padding: 6px 10px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   width: 30%;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 input[type='number']:focus {
@@ -192,24 +189,23 @@ button:hover {
 
 /* Cart */
 .container-cart {
-  padding: 10px 150px;
+  padding: 20px 250px;
   height: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: center;
-  gap: 20px;
 }
 
 .cart-summary {
-  max-width: 320px;
-  max-height: 280px;
+  width: 400px;
+  height: 350px;
   position: fixed;
-  top: 20%;
-  right: 5%;
+  top: 26%;
+  right: 10%;
   padding: 20px 30px;
   border: none;
   border-radius: 8px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -361,13 +357,4 @@ h4 {
 .empty {
   margin: 30px 80px;
   color: red;
-}
-
-@media screen and (max-width: 1500px) {
-  body {
-    transform: scale(
-      0.8
-    ); /* Adjust the scale value as needed /
-  transform-origin: top left; / Ensures the content scales from the top-left corner */
-  }
 }
