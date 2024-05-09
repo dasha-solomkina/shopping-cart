@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import CartCount from './CartCount';
 
 export default function BasicMenu() {
   return (
@@ -19,7 +20,7 @@ export default function BasicMenu() {
         <p>Jewerly</p>
       </Link>
       <Link to="../cart" className="linkWithoutStyles">
-        <p>Cart</p>
+        <CartCount />
       </Link>
     </>
   );

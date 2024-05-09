@@ -7,6 +7,8 @@ import Men from './pages/Men.tsx';
 import Women from './pages/Women.tsx';
 import Jewelry from './pages/Jewelry.tsx';
 
+import { MenuCartProvider } from './store/cartContext.tsx';
+
 const router = createBrowserRouter([
   { path: '/', element: <Home /> },
   { path: 'cart', element: <Cart /> },
@@ -17,7 +19,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <MenuCartProvider>
+      <RouterProvider router={router} />
+    </MenuCartProvider>
+  );
 }
 
 export default App;

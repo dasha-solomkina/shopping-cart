@@ -307,3 +307,37 @@ h4 {
   width: 65px;
   padding: 10px 0;
 }
+
+/* Cart caunter menu */
+#menu-count {
+  display: flex;
+  align-items: center;
+}
+
+#menu-count img {
+  width: 30px;
+}
+
+#counter {
+  width: 20px;
+  height: 20px;
+  background-color: #ca273c;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+  transform: translate(-12px, 12px);
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+}
+
+.loading-container img {
+  margin-top: 250px;
+  width: 100px;
+}

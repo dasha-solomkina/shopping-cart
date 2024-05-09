@@ -6,7 +6,6 @@ export default function Cart() {
   return (
     <Layout>
       <div className="container-cart">
-        {/* <h2>CART PAGE!</h2> */}
         <CartTable />
         <CartSummary />
       </div>
