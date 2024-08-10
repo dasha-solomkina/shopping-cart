@@ -8,7 +8,7 @@ This project was created to demonstrate proficiency in React by building a mock 
 - **Shopping Cart Management**: Allows users to add items to the cart and see the cart update in real-time.
 - **API Integration**: Fetches shop items from the FakeStore API or a similar service.
 - **Deployment Ready**: Configured for deployment on Vercel with proper routing for SPAs.
-- **Tools**: React, TypeScript, React Router, FaleStore API, Vercel.
+- **Tools**: React, TypeScript, React Router, FakeStore API, Vercel.
 
 ## How to Run the Project on a Local Machine
 
