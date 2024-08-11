@@ -47,3 +47,6 @@ yarn dev
 ## Live project
 
 You can access the [live project here](https://shopping-cart-lime-eta.vercel.app/).
+</br>
+
+<img src="https://github.com/user-attachments/assets/4cba5cf1-d5c9-4451-9865-9a5b606d5d50" alt="image" width="500"/>
