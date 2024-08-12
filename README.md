@@ -2,6 +2,9 @@
 
 This project was created to demonstrate proficiency in React by building a mock shopping cart application. The primary objective was to apply concepts such as routing, state management, and component structuring while creating a functional and visually appealing shopping cart interface. The application emphasizes user interaction and smooth navigation.
 
+<img src="https://github.com/user-attachments/assets/4cba5cf1-d5c9-4451-9865-9a5b606d5d50" alt="image" width="500"/>
+
+
 ## Key Features
 - **Home, Cart and Porducts Pages**: pages with a consistent navigation bar to switch between them.
 - **Product Cards**: Each product card includes a title, an input field for quantity, increment and decrement buttons, and an "Add To Cart" button.
@@ -47,6 +50,3 @@ yarn dev
 ## Live project
 
 You can access the [live project here](https://shopping-cart-lime-eta.vercel.app/).
-</br>
-
-<img src="https://github.com/user-attachments/assets/4cba5cf1-d5c9-4451-9865-9a5b606d5d50" alt="image" width="500"/>
